@@ -1,0 +1,25 @@
+{
+  "name": "@cgignite/ignite-redis",
+  "node-red": {
+    "nodes": {
+      "redis": "lib/redis.js"
+    }
+  },
+  "version": "1.0.1",
+  "description": "redis node to allow in memory data storage for ignite platform",
+  "main": "index.js",
+  "scripts": {},
+  "author": {
+    "name": "Ravi Kant Sharma",
+    "email": "ravikantsharma2169@gmail.com"
+  },
+  "keywords": [
+    "CG",
+    "redis"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {}
+}

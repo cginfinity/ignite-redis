@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('redis', {
+        category: 'storage',
+        color: '#d92b21',
+        defaults: {
+            name: { value: "" },
+            getset: { value: "GET" },
+            mykey: { value: "" },
+            myvalue: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: 'node-red/redis.png',
+        label: function () {
+            return this.name || "redis";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="redis">
+    <div class="form-row">
+        <label for="node-input-name">Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-getset"><i class="fa fa-globe"></i><span>Operation</span></label>
+        <select type="select" id="node-input-getset">
+            <option value="GET">GET</option>
+            <option value="SET">SET</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-mykey">Key</label>
+        <input type="text" id="node-input-mykey" placeholder="Key">
+    </div>
+    <div class="form-row">
+        <label for="node-input-myvalue">Value</label>
+        <input type="password" id="node-input-myvalue" placeholder="Value">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="redis">
+    <p>A node that interacts with the memory to provide in-memory access</p>
+</script>
