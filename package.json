@@ -1,25 +1,37 @@
 {
-  "name": "@cgignite/ignite-redis",
-  "node-red": {
-    "nodes": {
-      "redis": "lib/redis.js"
-    }
-  },
-  "version": "1.0.1",
-  "description": "redis node to allow in memory data storage for ignite platform",
+  "name": "@cgignite/redis",
+  "version": "1.0.0",
+  "description": "Node Red client for Redis with pub/sub, list, lua scripting  and other commands support.",
   "main": "index.js",
-  "scripts": {},
-  "author": {
-    "name": "Ravi Kant Sharma",
-    "email": "ravikantsharma2169@gmail.com"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cybergroup-Research/ignite-redis.git"
   },
   "keywords": [
-    "CG",
-    "redis"
+    "redis",
+    "node-red",
+    "node"
   ],
-  "license": "ISC",
-  "dependencies": {
-    "redis": "^3.0.2"
+  "node-red": {
+    "nodes": {
+      "redis": "redis.js"
+    }
   },
-  "devDependencies": {}
+  "author": {
+    "name": "Bijay Shah"
+  },
+  "homepage": "https://github.com/Cybergroup-Research/ignite-redis#readme",
+  "maintainers": [
+    {
+      "name": "bijay shah",
+      "email": "bijay.shah@cygrp.com"
+    }
+  ],
+  "dependencies": {
+    "async": "^3.2.0",
+    "ioredis": "^4.17.3"
+  }
 }
